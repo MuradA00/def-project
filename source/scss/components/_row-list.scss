@@ -1,0 +1,15 @@
+.row-list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.cards-section__item {
+  @include tablet {
+    display: block !important;
+  }
+}

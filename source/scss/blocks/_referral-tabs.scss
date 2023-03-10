@@ -1,0 +1,30 @@
+.referral-tabs {
+  padding-bottom: clamp(20px, 6.303vw, 75px);
+  background: linear-gradient(180deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.1) 100%);
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &-btn {
+      padding: 13px 16px 20px;
+      border-radius: 12px 12px 0px 0px;
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      color: rgba(var(--cl-a),1.0);
+
+      @include ios{
+        padding: 13px clamp(7px, 1.368vw, 16px) 20px;
+      }
+
+      &.active {
+        background: rgba(var(--bg-r),1.0);
+      }
+    }
+  }
+}
+
+

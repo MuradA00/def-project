@@ -1,0 +1,39 @@
+.connect-list{    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 36px 18px;
+
+    @include mobile{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 120px;
+        min-height: 40px;
+        background-color: rgba(var(--bm-a),1.0);
+        border: 1px solid transparent;
+        border-radius: 6px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(var(--cl-a),1.0);
+        position: relative;
+        
+        img{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -75%);
+        }
+    }
+
+
+}

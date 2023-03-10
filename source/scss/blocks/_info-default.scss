@@ -1,0 +1,25 @@
+.info-default{
+    padding-bottom: clamp(34px, 8.547vw, 100px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content{
+        padding-top: 40px;
+
+        @include small-tablet{
+            padding-top: 40px;
+        }
+
+
+        .referral-table{
+            border-radius: 0px 12px 12px 12px;
+        }
+    }
+
+    .pagination{
+        display: flex;
+    }
+}

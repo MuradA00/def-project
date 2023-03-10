@@ -1,0 +1,34 @@
+.channel-list{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(10px, 1.709vw, 20px);
+    padding: 17px 17px 25px;
+    border-radius: 8px;
+    background: rgba(var(--bg-z),1.0);
+    &__link{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        font-family:  var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(var(--cl-m),1.0);
+        transition: all .4s;
+
+        &:hover{
+            color: rgba(var(--cl-f),1.0);
+        }
+    }
+
+    &__name{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(var(--cl-f),1.0);
+        text-align: start;
+    }
+}

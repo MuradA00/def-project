@@ -1,0 +1,49 @@
+.referral-tabs {
+  .pagination {
+    display: flex;
+  }
+}
+
+.pagination {
+  margin: 38px auto 0;
+  width: fit-content;
+  display: none;
+  align-items: center;
+  grid-gap: 5px;
+
+  @include mobile {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+  }
+
+  &__el {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--bg-p),1.0);
+    border-radius: 8px;
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    color:rgba(var(--cl-f),1.0);
+    width: 32px;
+    height: 32px;
+
+    &.active {
+      color: rgba(var(--cl-a),1.0);
+      background-color: rgba(var(--bg-e),1.0);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.burning-section {
+  padding: clamp(60px, 7.143vw, 85px) 0 clamp(20px, 6.303vw, 75px);
+  background-color: rgba(var(--bg-h),1.0);
+  background: var(--gradient-a);
+
+  &__box {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.2fr minmax(250px, 1fr);
+    grid-gap: 40px clamp(20px, 4.202vw, 50px);
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 53px;
+  }
+}

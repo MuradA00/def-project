@@ -1,0 +1,25 @@
+.staked-list{
+    border-radius: 12px;
+    border: 1px solid rgba(var(--bm-a), 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    &__item{
+        padding: clamp(15px, 1.709vw, 20px) clamp(15px, 2.393vw, 28px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active{
+            background-color: rgba(var(--bg-e),1.0);
+        }
+    }
+    &__value{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(var(--cl-a),1.0);
+    }
+}

@@ -1,0 +1,31 @@
+.overview-line{
+    padding:50px 0 20px;
+    position: relative;
+    
+    @include small-tablet{
+        padding:0 0 40px;
+    }
+} 
+
+.tokens-line{
+    padding: 0;
+    &::before{
+        display: none;
+    }
+
+    @include small-tablet{
+        padding-top: 34px;
+    }
+}
+
+.pools-line{
+    padding:140px 0 20px;
+    &::before{
+        display: none;
+    }
+
+    @include small-tablet{
+        padding:41px 0 20px;
+    }
+}
+

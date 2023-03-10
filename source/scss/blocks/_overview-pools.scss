@@ -1,0 +1,63 @@
+.overview-pools{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    margin-bottom: 60px;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: -60px;
+        height: 556px;
+        background: linear-gradient(180deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.21) 100%);
+        opacity: 0.4;
+        pointer-events: none;
+
+        @include mobile{
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: initial;
+            width: 180px;
+            height: 584px;
+            top: 60%;
+            transform: scaleX(-1) translateY(-50%);
+            background-image: var(--dark-left);
+            right: 0;
+            bottom: initial;
+            left: initial;
+            background-position: right;
+        }
+    }
+    &:after{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        pointer-events: none;
+        width: 180px;
+        height: 584px;
+        top: 60%;
+        transform: translateY(-50%);
+        background-image: var(--dark-left);
+        left: 0;
+        background-position: left;
+
+        @include mobile{
+            content: '';
+        }
+    }
+
+    @include mobile{
+        margin-bottom: 0;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 40px;
+    }
+}

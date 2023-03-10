@@ -1,0 +1,84 @@
+.small-tabs{
+    background: linear-gradient(180deg, #0D1E3C 0%, rgba(13, 30, 60, 0) 100%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    max-width: 476px;
+    padding: clamp(20px, 2.222vw, 26px) clamp(20px, 2.991vw, 35px) clamp(20px, 2.222vw, 26px) clamp(20px, 3.504vw, 41px);
+    width: 100%;
+
+    @include small-tablet{
+        max-width: 100%;
+    }
+
+
+    &__name{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(14px, 1.368vw, 16px);
+        line-height: 120%;
+        color: rgba(var(--cl-f),1.0);
+    }
+
+    &__value{
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(24px, 2.137vw, 25px);
+        line-height: 32px;
+        color: rgba(var(--cl-a),1.0);
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30px;
+        grid-gap: 10px;
+        @include tablet{
+            padding: 0;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(6px, 0.769vw, 9px);
+    }
+
+
+    &__nav{
+        max-width: 160px;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        background: rgba(var(--bg-g),1.0);
+        border-radius: 8px;
+        padding: 6px clamp(6px, 1.026vw, 12px);
+
+        @include small-tablet{
+            max-width: 100%;
+        }
+    }
+
+    &__btn{
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(var(--cl-f),1.0);
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+        &.active{
+            background: rgba(var(--bg-e),1.0);
+            color: rgba(var(--cl-a),1.0);
+        }
+    }
+}

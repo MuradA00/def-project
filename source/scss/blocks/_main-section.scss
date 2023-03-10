@@ -1,0 +1,243 @@
+.main-section {
+  padding: clamp(20px, 6.723vw, 80px) 0 clamp(40px, 6.723vw, 80px);
+  background: linear-gradient(
+    180deg,
+    rgba(104, 102, 246, 0) 0%,
+    rgba(104, 102, 246, 0.21) 100%
+  );
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    // max-width: 1130px;
+    grid-gap: clamp(40px, 8.403vw, 100px);
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+    grid-gap: Min(6.723vw, 80px);
+    // max-width: 1100px;
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+      max-width: 70%;
+      align-items: flex-start;
+      grid-gap: 20px;
+    }
+
+    @include mobile {
+      grid-template-columns: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__image {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 4.202vw, 50px) Min(5.042vw, 60px);
+    padding-bottom: 20px;
+
+    @include laptop {
+      padding-bottom: 0;
+    }
+
+    .main-top {
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    grid-gap: 10px 20px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    @include small-tablet {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+
+  .main-button--transparent {
+    color: rgba(var(--cl-e), 1);
+  }
+
+  &__slider {
+    background: linear-gradient(
+      90deg,
+      rgba(29, 62, 118, 0.48) 0%,
+      rgba(29, 62, 118, 0) 87.13%
+    );
+    border-radius: 25px;
+    padding: 16px;
+    // max-height: 80px;
+
+    .swiper-container {
+      max-height: 40px;
+
+      @include small-tablet {
+        max-height: 105px;
+      }
+    }
+
+    @include mobile {
+      padding: 24px 15px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    grid-gap: 25px Min(4.85vw, 65px);
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    @include tablet {
+      grid-gap: 25px Min(3.5vw, 65px);
+    }
+
+    @include small-tablet {
+      display: grid;
+      justify-content: space-around;
+      grid-template-columns: repeat(3, auto);
+    }
+
+    @include mobile {
+      grid-gap: 25px 10px;
+      justify-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      &:nth-child(1) {
+        display: none;
+      }
+    }
+
+    @include small-tablet {
+      &:nth-child(1) {
+        display: block;
+      }
+    }
+
+    @include mobile {
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  @keyframes show-box {
+      0% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+  }
+
+  @keyframes show-nav {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    95% {
+      transform: translateX(2%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+
+  }
+
+  @keyframes show-btn {
+    0% {
+      opacity: 0;
+      transform: scale(1.09);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(1.09);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+  }
+
+  &__image {
+    .modal-main {
+      pointer-events: none !important;
+      overflow: hidden;
+    }
+
+    opacity: 0;
+    transform: scale(1.2);
+
+    .modal-main__nav {
+      transform: translateX(-100%);
+    }
+
+    .modal-swap__btn {
+      opacity: 0;
+      transform: scale(1.09);
+    }
+
+
+
+    &:not(.none-animate){
+      animation-name: show-box;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+      animation-duration: .8s;
+      animation-delay: 0;
+
+      .modal-main__nav {
+        animation-name: show-nav;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-duration: .9s;
+        animation-delay: .8s;
+      }
+
+      .modal-swap__btn {
+        animation-name: show-btn;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-duration: .8s;
+        animation-delay: 3s;
+      }
+    }
+
+
+
+
+  }
+}
+

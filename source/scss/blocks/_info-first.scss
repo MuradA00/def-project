@@ -1,0 +1,12 @@
+.info-first{
+    padding: clamp(40px, 5.983vw, 70px) 0 40px;
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 35px;
+
+        @include mobile{
+            grid-gap: 40px;
+        }
+    }
+}

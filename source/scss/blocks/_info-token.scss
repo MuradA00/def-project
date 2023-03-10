@@ -1,0 +1,38 @@
+.info-token{
+    padding: 0 0 clamp(60px, 8.547vw, 100px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 4.359vw, 51px);
+    }
+
+    &__inner{
+        display: flex;
+        grid-gap: 40px;
+
+        @include small-tablet{
+            flex-direction: column;
+        }
+
+        &--mode{
+            display: grid;
+            grid-template-columns: 0.8fr 1fr;
+            grid-gap:15px clamp(20px, 3.419vw, 40px);
+
+            .token-liquidity{
+                grid-row: span 2;
+
+                @include small-tablet{
+                    grid-row: initial;
+                    order: 3;
+                }
+            }
+
+            @include small-tablet{
+                grid-gap: 20px;
+                grid-template-columns: 100%;
+            }
+        }
+    }
+}

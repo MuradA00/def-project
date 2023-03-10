@@ -1,0 +1,124 @@
+.descr-section {
+  background: var(--gradient-a);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(8px, 1.681vw, 20px);
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(35px, 3.782vw, 45px);
+    line-height: 100%;
+    color: rgba(var(--cl-a),1.0);
+  }
+
+  &__descr {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, 1.345vw, 16px);
+    line-height: 150%;
+    color: rgba(var(--cl-f),1.0);
+  }
+
+  &--team {
+    .container {
+      padding-top: clamp(46px, 6.05vw, 72px) !important;
+      padding-bottom: clamp(46px, 6.05vw, 86px) !important;
+    }
+  }
+
+  &--team .descr-section {
+
+    &__content {
+      max-width: 556px;
+      width: 100%;
+
+      @include mobile {
+        max-width: 303px;
+      }
+    }
+  }
+
+  &--farming .descr-section {
+    &__content {
+      max-width: 656px;
+      width: 100%;
+
+      @include mobile {
+        max-width: 303px;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 3.529vw, 42px);
+  }
+
+  &--token {
+    padding: 0;
+
+    .descr-section {
+
+        &__box {
+          align-items: center;
+          display: grid;
+          grid-template-columns: 1fr Min(58.992vw, 702px);
+          grid-gap: 30px clamp(30px, 6.303vw, 75px);
+          width: calc(100% + Min(6.723vw, 80px));
+
+          @include tablet {
+            grid-template-columns: 1fr 1.2fr;
+            grid-gap: 30px;
+            width: 100%;
+          }
+
+          @include small-tablet {
+            grid-template-columns: 100%;
+          }
+        }
+
+        &__content {
+          @include mobile {
+            text-align: center;
+          }
+        }
+
+        &__button {
+          @include mobile {
+            width: 100%;
+            height: 45px;
+          }
+        }
+
+        &__image {
+          margin-top: -40px;
+          margin-right: calc(Min(6.723vw, 80px) * -1);
+
+          @include tablet {
+            margin-right: 0;
+          }
+
+          @include small-tablet {
+            order: -1;
+            width: 100%;
+            margin-bottom: 0;
+
+            img, picture {
+              width: 100%;
+            }
+          }
+        }
+    }
+
+    .round-bg::after {
+      top: 15%;
+    }
+  }
+}

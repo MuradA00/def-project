@@ -1,0 +1,48 @@
+.slider-line {
+  background-color: rgba(var(--bg-e),1.0);
+  padding: clamp(14px, 1.681vw, 20px) 0;
+  transform: rotate(-2deg);
+  pointer-events: none;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+
+  &:nth-child(odd) {
+    transform: rotate(2deg);
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear!important;
+  }
+
+  .swiper-slide {
+    width: fit-content;
+    font-family: var(--font-family2);
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(14px, 1.681vw, 20px);
+    line-height: 90%;
+    text-transform: uppercase;
+    color: rgba(var(--cl-c),1.0);
+    padding-right: 40px;
+    position: relative;
+
+    &::before {
+      width: 10px;
+      height: 10px;
+      background-color: currentColor;
+      border-radius: 50%;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      display: block;
+      transform: translate(50%,-50%);
+    }
+
+    @include mobile {
+      padding-right: 30px;
+    }
+  }
+}

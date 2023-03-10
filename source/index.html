@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="En-en">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="main-section">
+      <div class="container">
+        <div class="main-section__box">
+            <div class="main-section__content">
+              <div class="main-top main-top--mode">
+                <span class="main-top__vidget">
+                  NEW DEFI IN WEB3.0
+                </span>
+                <h2 class="main-top__title">
+                  Decentralized Exchange Made For Everybody
+                </h2>
+                <p class="main-top__text main-section__descr">
+                  Enjoy the highest farming/trading rewards from unlimited referral levels!
+                </p>
+
+              </div>
+              <div class="main-section__buttons">
+                <button class="main-button main-section__btn" data-btn-modal="connect">
+                  Connect wallet
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </button>
+                <a href="modal.html"  class="main-section__btn main-button main-button--transparent">
+                  Trade now
+                </a>
+              </div>
+            </div>
+            <div class="main-section__image none-animate">
+              <div class="modal modal-main">
+                <div class="modal__box modal-main__box">
+
+                  <ul class="modal-main__nav">
+                    <li class="modal-main__nav-item">
+                      <button class="modal-main__nav-btn active">
+                        Swap
+                      </button>
+                    </li>
+                    <li class="modal-main__nav-item">
+                      <button class="modal-main__nav-btn">
+                        Liquidity
+                      </button>
+                    </li>
+                    <li class="modal-main__nav-item">
+                      <button class="modal-main__nav-btn">
+                        History
+                      </button>
+                    </li>
+                  </ul>
+
+                  <ul class="modal-main__content">
+                    <li class="modal-main__content-tab active">
+                      <div class="modal-main__content-inner">
+                        <ul class="exchange-list">
+                          <li class="exchange-list__item">
+                            <button class="exchange-btn"></button>
+                            <div class="exchange-list__coll">
+                              <span class="exchange-list__value">
+                                You sell:
+                              </span>
+                              <button class="exchange-list__button">
+                                <img width='30' height='30' src="/img/withdraw.svg" alt="image">
+                                FLS
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                                </svg>
+                              </button>
+                              <span class="exchange-list__value">
+                                FLS
+                              </span>
+                            </div>
+                            <div class="exchange-list__coll exchange-list__coll--mode">
+                              <span class="exchange-list__value">
+                                Balance: 110 000 <b class="modal-max">Max</b>
+                              </span>
+                              <span class="exchange-list__button" data-to="1000">
+                                0
+                              </span>
+                              <span class="exchange-list__value">
+                                ~2833.24
+                              </span>
+                            </div>
+                          </li>
+
+                          <li class="exchange-list__item">
+                            <div class="exchange-list__coll">
+                              <span class="exchange-list__value">
+                                You buy:
+                              </span>
+                              <button class="exchange-list__button ">
+                                <img width='30' height='30' src="/img/swap/img2.svg" alt="image">
+                                USDT
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                                </svg>
+                              </button>
+                              <span class="exchange-list__value">
+                                USDT
+                              </span>
+                            </div>
+                            <div class="exchange-list__coll exchange-list__coll--mode">
+                              <span class="exchange-list__value">
+                                Balance:0
+                              </span>
+                              <span class="exchange-list__button" data-to="631.043">
+                                0
+                              </span>
+                              <span class="exchange-list__value">
+                                ~2833.24
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                        <button class="modal-swap__btn main-button">
+                          Insufiction FLS balance
+                          <svg width="24" height="24">
+                            <use href="img/sprite/sprite.svg#main-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+
+          <div class='main-section__slider'>
+            <div class='swiper-container'>
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <ul class="main-section__list">
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BNB  <b class="red-text">-6.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $293.99
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon2.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BNB  <b class="red-text">-6.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $16,203.32
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon3.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            ETH <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $1,173.61
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon3.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BABY <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $0.03
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon3.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BABY <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $0.03
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon4.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            TRX <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $0.03
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                   </ul>
+                </li>
+                <li class='swiper-slide'>
+                  <ul class="main-section__list">
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BNB  <b class="red-text">-6.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $293.99
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon2.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BNB  <b class="red-text">-6.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $16,203.32
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon3.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            ETH <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $1,173.61
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon3.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BABY <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $0.03
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon3.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            BABY <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $0.03
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="main-section__item">
+                      <div class="valute-card">
+                        <div class="valute-card__icon">
+                          <img width='40' height='40' src="img/valute/icon4.svg" alt="icon">
+                        </div>
+                        <div class="valute-card__inner">
+                          <span class="valute-card__info">
+                            TRX <b class="red-text">-2.02%</b>
+                          </span>
+                          <span class="valute-card__value">
+                            $0.03
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                   </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+      </div>
+    </section>
+
+    <section class="our-benefits dark-section">
+      <div class="container">
+        <div class="our-benefits__box">
+          <div class="main-top">
+            <h2 class="main-top__title" data-title="Our benefits">
+              Our <span class="violet-text">benefits</span>
+            </h2>
+          </div>
+
+          <div class="our-benefits__inner">
+            <ul class="benefits-list">
+              <li class="benefits-list__item">
+                <div class="benefits-list__icon">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits.webp'>
+                    <img loading='lazy' width='175' height='152' src='img/benefits.png' alt='image'>
+                  </picture>
+                </div>
+
+                <div class="benefits-list__content">
+                  <span class="benefits-list__title">
+                    No exchange fees
+                  </span>
+
+                  <p class="benefits-list__descr">
+                    0.15% of the commission from each trade is allocated to stimulate liquidity providers.
+                  </p>
+                </div>
+              </li>
+              <li class="benefits-list__item">
+                <div class="benefits-list__icon">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits2.webp'>
+                    <img loading='lazy' width='175' height='152' src='img/benefits2.png' alt='image'>
+                  </picture>
+                </div>
+
+                <div class="benefits-list__content">
+                  <span class="benefits-list__title">
+                    The Lowest Exchange Fee
+                  </span>
+                  <p class="benefits-list__descr">
+                    Safely buy and sell your cryptocurrency with the lowest exchange fee in the DeFi space.
+                  </p>
+                </div>
+              </li>
+              <li class="benefits-list__item">
+                <div class="benefits-list__icon">
+                  <picture>
+                    <source type='image/webp' srcset='img/benefits3.webp'>
+                    <img loading='lazy' width='180' height='152' src='img/benefits3.png' alt='image'>
+                  </picture>
+                </div>
+
+                <div class="benefits-list__content">
+                  <span class="benefits-list__title">
+                    Referral system with large rewards
+                  </span>
+
+                  <p class="benefits-list__descr">
+                    Make a swap on Biswap at no cost. Up to 50% of the trading fee returned in BSW tokens.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="our-benefits__list">
+              <li class="our-benefits__item">
+                <span class="our-benefits__item-value">
+                  <svg width='30' height='30'>
+                    <use href='img/sprite/sprite.svg#benefits'></use>
+                  </svg>
+                  $51.85B
+                </span>
+                <span class="our-benefits__item-descr">
+                  Total Volume
+                </span>
+              </li>
+              <li class="our-benefits__item">
+                <span class="our-benefits__item-value">
+                  <svg width='30' height='30'>
+                    <use href='img/sprite/sprite.svg#benefits2'></use>
+                  </svg>
+                  $18.16M
+                </span>
+                <span class="our-benefits__item-descr">
+                  24H Volume
+                </span>
+              </li>
+              <li class="our-benefits__item">
+                <span class="our-benefits__item-value">
+                  <svg width='30' height='30'>
+                    <use href='img/sprite/sprite.svg#benefits3'></use>
+                  </svg>
+                  521.29K
+                </span>
+                <span class="our-benefits__item-descr">
+                  Active users
+                </span>
+              </li>
+              <li class="our-benefits__item">
+                <span class="our-benefits__item-value">
+                  <svg width='30' height='30'>
+                    <use href='img/sprite/sprite.svg#benefits4'></use>
+                  </svg>
+                  $124.43M
+                </span>
+                <span class="our-benefits__item-descr">
+                  Active users
+                </span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class='slider-line swiper-container our-benefits__line'>
+        <ul class='swiper-wrapper'>
+          <li class='swiper-slide'>
+            Flixswap
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="launchpools-section dark-section">
+      <div class="launchpools-section__wave"></div>
+      <div class="container">
+        <div class="launchpools-section__box">
+          <div class="main-top main-top--mode">
+            <h2 class="main-top__title">
+              Launchpools
+            </h2>
+          </div>
+
+          <ul class="cards-list">
+            <li class="cards-list__item">
+              <div class="vertical-card violet-card">
+                <div class="vertical-card__top">
+                  <div class="vertical-card__icons">
+                    <img width='75' height='45' src="img/sprite/card.svg" alt="icon">
+                  </div>
+                  <div class="vertical-card__top-info">
+                    <span class="vertical-card__top-name">
+                      USDT-FLS
+                    </span>
+                    <span class="vertical-card__top-value">
+                      Multiplier
+                      <b class="green-text">
+                        6.1x
+                      </b>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="vertical-card__value">
+                  <span class="vertical-card__value-name">APY</span>
+                  <span class="vertical-card__value-number">31.14% </span>
+                </div>
+
+                <ul class="vertical-card__list">
+                  <li class="vertical-card__item">
+                    <div class="vertical-card__coll">
+                        <span class="vertical-card__coll-name">
+                          LP Staked:
+                        </span>
+                        <span class="vertical-card__coll-value">
+                          0.000 LP
+                        </span>
+                        <span class="vertical-card__coll-price">
+                          0.0000$
+                        </span>
+                    </div>
+                    <div class="vertical-card__coll">
+                      <button class="vertical-card__btn" data-btn-modal="alert">
+                        Get LP
+                      </button>
+                    </div>
+                  </li>
+                  <li class="vertical-card__item">
+                    <div class="vertical-card__coll">
+                        <span class="vertical-card__coll-name">
+                          BSW Earned
+                        </span>
+                        <span class="vertical-card__coll-value">
+                          0.000 LP
+                        </span>
+                        <span class="vertical-card__coll-price">
+                          0.0000$
+                        </span>
+                    </div>
+
+                    <div class="vertical-card__coll">
+                      <button class="vertical-card__btn vertical-card__btn--green" disabled>
+                        Harvest
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+
+                <button class="vertical-card__wallet" data-btn-modal="connect">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#wallet2'></use>
+                  </svg>
+                  Connect wallet
+                </button>
+
+                <div class="vertical-card__acc" data-accordion-init>
+                  <div class="vertical-card__acc-box panel" data-content="1">
+                    <ul class="vertical-card__acc-list">
+                      <li class="vertical-card__acc-item">
+                        <span class="vertical-card__acc-name">
+                          APR:
+                        </span>
+                        <span class="vertical-card__acc-value">
+                          <b class="green-text">
+                            12.5%
+                          </b>
+                        </span>
+                      </li>
+                      <li class="vertical-card__acc-item">
+                        <span class="vertical-card__acc-name">
+                          Total liquidity:
+                        </span>
+                        <span class="vertical-card__acc-value">
+                          $359 012.21
+                        </span>
+                      </li>
+                      <li class="vertical-card__acc-item">
+                        <a href="#" class="vertical-card__acc-link">
+                          View contract
+                          <svg width='17' height='17'>
+                            <use href='img/sprite/sprite.svg#arrow-link'></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="vertical-card__acc-button" data-id="1">
+                    Details
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="vertical-card red-card">
+                <div class="vertical-card__top">
+                  <div class="vertical-card__icons">
+                    <img width='75' height='45' src="img/sprite/card2.svg" alt="icon">
+                  </div>
+                  <div class="vertical-card__top-info">
+                    <span class="vertical-card__top-name">
+                      USDT-FLS
+                    </span>
+                    <span class="vertical-card__top-value">
+                      Multiplier
+                      <b class="green-text">
+                        6.1x
+                      </b>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="vertical-card__value">
+                  <span class="vertical-card__value-name">APY</span>
+                  <span class="vertical-card__value-number">31.14% </span>
+                </div>
+
+                <ul class="vertical-card__list">
+                  <li class="vertical-card__item">
+                    <div class="vertical-card__coll">
+                        <span class="vertical-card__coll-name">
+                          LP Staked:
+                        </span>
+                        <span class="vertical-card__coll-value">
+                          0.000 LP
+                        </span>
+                        <span class="vertical-card__coll-price">
+                          0.0000$
+                        </span>
+                    </div>
+                    <div class="vertical-card__coll">
+                      <button class="vertical-card__btn">
+                        Get LP
+                      </button>
+                    </div>
+                  </li>
+                  <li class="vertical-card__item">
+                    <div class="vertical-card__coll">
+                        <span class="vertical-card__coll-name">
+                          BSW Earned
+                        </span>
+                        <span class="vertical-card__coll-value">
+                          0.000 LP
+                        </span>
+                        <span class="vertical-card__coll-price">
+                          0.0000$
+                        </span>
+                    </div>
+
+                    <div class="vertical-card__coll">
+                      <button class="vertical-card__btn vertical-card__btn--green" disabled>
+                        Harvest
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+
+                <button class="vertical-card__wallet" data-btn-modal="connect">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#wallet2'></use>
+                  </svg>
+                  Connect wallet
+                </button>
+
+                <div class="vertical-card__acc" data-accordion-init>
+                  <div class="vertical-card__acc-box panel" data-content="1">
+                    <ul class="vertical-card__acc-list">
+                      <li class="vertical-card__acc-item">
+                        <span class="vertical-card__acc-name">
+                          APR:
+                        </span>
+                        <span class="vertical-card__acc-value">
+                          <b class="green-text">
+                            12.5%
+                          </b>
+                        </span>
+                      </li>
+                      <li class="vertical-card__acc-item">
+                        <span class="vertical-card__acc-name">
+                          Total liquidity:
+                        </span>
+                        <span class="vertical-card__acc-value">
+                          $359 012.21
+                        </span>
+                      </li>
+                      <li class="vertical-card__acc-item">
+                        <a href="#" class="vertical-card__acc-link">
+                          View contract
+                          <svg width='17' height='17'>
+                            <use href='img/sprite/sprite.svg#arrow-link'></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="vertical-card__acc-button" data-id="1">
+                    Details
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="vertical-card orange-card">
+                <div class="vertical-card__top">
+                  <div class="vertical-card__icons">
+                    <img width='75' height='45' src="img/sprite/card3.svg" alt="icon">
+                  </div>
+                  <div class="vertical-card__top-info">
+                    <span class="vertical-card__top-name">
+                      USDT-FLS
+                    </span>
+                    <span class="vertical-card__top-value">
+                      Multiplier
+                      <b class="green-text">
+                        6.1x
+                      </b>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="vertical-card__value">
+                  <span class="vertical-card__value-name">APY</span>
+                  <span class="vertical-card__value-number">31.14% </span>
+                </div>
+
+                <ul class="vertical-card__list">
+                  <li class="vertical-card__item">
+                    <div class="vertical-card__coll">
+                        <span class="vertical-card__coll-name">
+                          LP Staked:
+                        </span>
+                        <span class="vertical-card__coll-value">
+                          0.000 LP
+                        </span>
+                        <span class="vertical-card__coll-price">
+                          0.0000$
+                        </span>
+                    </div>
+                    <div class="vertical-card__coll">
+                      <button class="vertical-card__btn" data-btn-modal="error">
+                        Get LP
+                      </button>
+                    </div>
+                  </li>
+                  <li class="vertical-card__item">
+                    <div class="vertical-card__coll">
+                        <span class="vertical-card__coll-name">
+                          BSW Earned
+                        </span>
+                        <span class="vertical-card__coll-value">
+                          0.000 LP
+                        </span>
+                        <span class="vertical-card__coll-price">
+                          0.0000$
+                        </span>
+                    </div>
+
+                    <div class="vertical-card__coll">
+                      <button class="vertical-card__btn vertical-card__btn--green" disabled>
+                        Harvest
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+
+                <button class="vertical-card__wallet" data-btn-modal="connect">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#wallet2'></use>
+                  </svg>
+                  Connect wallet
+                </button>
+
+                <div class="vertical-card__acc" data-accordion-init>
+                  <div class="vertical-card__acc-box panel" data-content="1">
+                    <ul class="vertical-card__acc-list">
+                      <li class="vertical-card__acc-item">
+                        <span class="vertical-card__acc-name">
+                          APR:
+                        </span>
+                        <span class="vertical-card__acc-value">
+                          <b class="green-text">
+                            12.5%
+                          </b>
+                        </span>
+                      </li>
+                      <li class="vertical-card__acc-item">
+                        <span class="vertical-card__acc-name">
+                          Total liquidity:
+                        </span>
+                        <span class="vertical-card__acc-value">
+                          $359 012.21
+                        </span>
+                      </li>
+                      <li class="vertical-card__acc-item">
+                        <a href="#" class="vertical-card__acc-link">
+                          View contract
+                          <svg width='17' height='17'>
+                            <use href='img/sprite/sprite.svg#arrow-link'></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="vertical-card__acc-button" data-id="1">
+                    Details
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about-token dark-section" id="about">
+      <div class="container">
+        <div class="about-token__box">
+          <div class="main-top about-token__top">
+            <h2 class="main-top__title" data-title="Token">
+              About <span class="violet-text">FLS Token</span>
+            </h2>
+
+            <p class="main-top__text">
+              FLS is a popular utility token with a huge user base that supports the Biswap ecosystem. Apart from being able to trade FLS token, you can also make use of a wide variety additional benefits that come along with it.
+            </p>
+
+            <a href="token.html" class="about-token__button main-button main-button--transparent">
+              More
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#main-arrow'></use>
+              </svg>
+            </a>
+
+          </div>
+
+          <ul class="about-token__list about-list">
+            <li class="about-list__item">
+              <span class="about-list__value">
+                45%
+              </span>
+              <span class="about-list__name">
+                Farms / Launchpools
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                8%
+              </span>
+              <span class="about-list__name">
+                SAFU
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                13%
+              </span>
+              <span class="about-list__name">
+                Referral program
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                13%
+              </span>
+              <span class="about-list__name">
+                Investments Faund
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                9%
+              </span>
+              <span class="about-list__name">
+                Team
+              </span>
+            </li>
+            <li class="about-list__item">
+              <span class="about-list__value">
+                9%
+              </span>
+              <span class="about-list__name">
+                Team
+              </span>
+            </li>
+          </ul>
+
+          <div class="about-token__diagram diagram">
+            <div class="diagram__inner">
+              <div class="diagram__values">
+                <span class="diagram__value">
+                  600<b>m</b>
+                </span>
+                <span class="diagram__name">
+                  max supply
+                </span>
+              </div>
+
+              <svg width="176" height="13">
+                <use href='img/sprite/sprite.svg#lines'></use>
+              </svg>
+            </div>
+            <div class="diagram__image">
+              <picture>
+                <source type='image/webp' srcset='img/diagram.webp'>
+                <img loading='lazy' width='430' height='430' src='img/diagram.png' alt='image'>
+              </picture>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class='partners-box'>
+          <div class="main-top main-top--mode partners-box__top">
+            <h2 class="main-top__title">
+              Partners
+            </h2>
+          </div>
+
+          <div class="partners-box__inner">
+            <div class='partners-box__slider swiper-container'>
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <div class="partners-logo">
+                      <img width="217" height="32" src="img/partners/logo.svg" alt="logo">
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="partners-logo">
+                      <img width="173" height="44" src="img/partners/logo2.svg" alt="logo">
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="partners-logo">
+                      <img width="170" height="50" src="img/partners/logo3.svg" alt="logo">
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="partners-logo">
+                      <img width="248" height="36" src="img/partners/logo4.svg" alt="logo">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class='swiper-button-prev partners-box__button'>
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-l'></use>
+              </svg>
+            </button>
+            <button class='swiper-button-next partners-box__button'>
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#arrow-r'></use>
+              </svg>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      <div class='slider-line swiper-container about-token__line'>
+        <ul class='swiper-wrapper'>
+          <li class='swiper-slide'>
+            Flixswap
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>

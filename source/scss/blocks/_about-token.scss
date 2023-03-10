@@ -1,0 +1,137 @@
+.about-token {
+  padding: clamp(30px, 6.303vw, 75px) 0 clamp(20px, 6.303vw, 50px);
+  background: var(--gradient-d);
+
+  &__line {
+    margin: 30px 0;
+
+    @include mobile {
+      margin: -40px 0 0;
+    }
+  }
+
+  &__button {
+    max-width: 328px;
+    width: 100%;
+    border-radius: 8px;
+
+    @include mobile {
+      max-width: 100%;
+      order: 4;
+    }
+
+    &:hover {
+      background:  rgba(var(--bg-e),1.0);
+      border-radius: 8px;
+      color: rgba(var(--cl-a),1.0) !important;
+    }
+  }
+
+  &__top {
+    grid-gap: 32px;
+    max-width: 650px;
+    width: 100%;
+    @include mobile {
+      grid-gap: 26px;
+    }
+  }
+
+  &.dark-section {
+    padding-top: Min(15.126vw, 190px);
+    padding-bottom: 10px;
+    background: rgba(var(--bg-n), 1);
+    display: flex;
+    flex-direction: column;
+    grid-gap: Min(8.403vw, 109px);
+
+    @include small-tablet {
+      &::after {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      grid-gap: 100px;
+      padding-bottom: 80px;
+    }
+
+    .violet-text {
+      color: rgba(var(--cl-e), 1);
+    }
+
+    .main-top [data-title]::before {
+      width: Min(100.84vw, 1200px);
+      text-align: center;
+      transform: translateY(-71%);
+    }
+
+    .about-token__box {
+      align-items: flex-end;
+      grid-gap: clamp(20px, 3.782vw, 45px) clamp(15px, 3.025vw, 36px);
+    }
+  }
+
+  .violet-text {
+    color: currentColor;
+
+    @include small-tablet {
+      color: rgba(var(--cl-e),1.0);
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    grid-gap: clamp(20px, 3.782vw, 45px) clamp(15px, 3.025vw, 36px);
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__top{
+    grid-column: 1;
+
+    @include small-tablet {
+      order: 1;
+    }
+  }
+
+  &__list {
+    grid-column: 1;
+
+    @include small-tablet {
+      order: 3;
+    }
+  }
+
+  &__diagram {
+    margin: 0 auto;
+    grid-column: 2;
+    grid-row: 1/span 2;
+
+    @include small-tablet {
+     grid-column: initial;
+     grid-row: initial;
+     order: 2;
+    }
+  }
+
+  @include mobile {
+    position: relative;
+
+    &::before {
+      width: 382px;
+      height: 800px;
+      position: absolute;
+      content: '';
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: var(--section-before);
+      bottom: 10%;
+      left: 0;
+      pointer-events: none;
+    }
+  }
+}

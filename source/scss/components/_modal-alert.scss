@@ -1,0 +1,93 @@
+.modal-alert{
+    max-width: 462px;
+    width: 90vw;
+    padding: clamp(15px, 2.521vw, 30px) clamp(15px, 2.521vw, 30px) clamp(60px, 10.427vw, 122px);
+    background: rgba(var(--bg-p),1.0);
+    border-radius: 20px;
+
+    
+    &::before{
+        background: linear-gradient(180deg, #6866F6 0%, rgba(104, 102, 246, 0) 100%);
+        opacity: 0.65;
+        border-radius: 20px 20px 0px 0px;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 176px;
+        z-index: -1;
+    }
+    
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(85px, 8.718vw, 102px);
+        
+        p{
+            max-width: 400px;
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: rgba(var(--cl-o),1.0);
+        }
+    }
+    &__title{
+        font-family:  var(--font-family2);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 32px;
+        color: rgba(var(--cl-a),1.0);
+        width: 100%;
+        text-align: center;
+    }
+    &__btn{
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    &__top{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__subtitle{
+        text-align: center;
+        font-family:  var(--font-family2);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 27px;
+        color: rgba(var(--cl-a),1.0);
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 12px;
+    }
+    &__img{
+        margin-bottom: 55px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--icon-g);
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+        }
+
+ 
+    }
+}
