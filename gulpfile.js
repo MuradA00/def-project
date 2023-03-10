@@ -329,7 +329,7 @@ exports.default = series(clean, htmlInclude,json, scripts, styles, resources, im
 
 exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, video,images, webpImages, svgSprites)
 
-exports.build = series(toProd, clean, htmlInclude, json, scripts, styles, resources, faviconIcon ,video,images, webpImages, svgSprites, htmlMinify);
+exports.build = series(toProd, clean, htmlInclude, json, scripts, styles, resources, video,images, webpImages, svgSprites, htmlMinify);
 
 exports.cache = series(cache, rewrite);
 
